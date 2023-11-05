@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AspNET_WebModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tb_departamento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="nome" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="descricao" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_funcionario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nome" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="sobrenome" Type="varchar" MaxLength="50" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="RG" Type="varchar" MaxLength="50" />
+          <Property Name="CPF" Type="varchar" MaxLength="50" />
+          <Property Name="logradouro" Type="varchar" MaxLength="50" />
+          <Property Name="bairro" Type="varchar" MaxLength="50" />
+          <Property Name="cidade" Type="varchar" MaxLength="50" />
+          <Property Name="UF" Type="char" MaxLength="2" />
+          <Property Name="id_departamento" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_tb_funcionario_tb_departamento">
+          <End Role="tb_departamento" Type="Self.tb_departamento" Multiplicity="1" />
+          <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_departamento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="tb_funcionario">
+              <PropertyRef Name="id_departamento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AspNET_WebModelStoreContainer">
+          <EntitySet Name="tb_departamento" EntityType="Self.tb_departamento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_funcionario" EntityType="Self.tb_funcionario" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_tb_funcionario_tb_departamento" Association="Self.FK_tb_funcionario_tb_departamento">
+            <End Role="tb_departamento" EntitySet="tb_departamento" />
+            <End Role="tb_funcionario" EntitySet="tb_funcionario" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AspNET_WebModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tb_departamento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="descricao" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tb_funcionario" Relationship="Self.FK_tb_funcionario_tb_departamento" FromRole="tb_departamento" ToRole="tb_funcionario" />
+        </EntityType>
+        <EntityType Name="tb_funcionario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sobrenome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RG" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPF" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="logradouro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="bairro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="cidade" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UF" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="id_departamento" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tb_departamento" Relationship="Self.FK_tb_funcionario_tb_departamento" FromRole="tb_funcionario" ToRole="tb_departamento" />
+        </EntityType>
+        <Association Name="FK_tb_funcionario_tb_departamento">
+          <End Role="tb_departamento" Type="Self.tb_departamento" Multiplicity="1" />
+          <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_departamento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="tb_funcionario">
+              <PropertyRef Name="id_departamento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Conn_AspNET" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tb_departamento" EntityType="Self.tb_departamento" />
+          <EntitySet Name="tb_funcionario" EntityType="Self.tb_funcionario" />
+          <AssociationSet Name="FK_tb_funcionario_tb_departamento" Association="Self.FK_tb_funcionario_tb_departamento">
+            <End Role="tb_departamento" EntitySet="tb_departamento" />
+            <End Role="tb_funcionario" EntitySet="tb_funcionario" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AspNET_WebModelStoreContainer" CdmEntityContainer="Conn_AspNET">
+          <EntitySetMapping Name="tb_departamento">
+            <EntityTypeMapping TypeName="AspNET_WebModel.tb_departamento">
+              <MappingFragment StoreEntitySet="tb_departamento">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="nome" ColumnName="nome" />
+                <ScalarProperty Name="descricao" ColumnName="descricao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_funcionario">
+            <EntityTypeMapping TypeName="AspNET_WebModel.tb_funcionario">
+              <MappingFragment StoreEntitySet="tb_funcionario">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="nome" ColumnName="nome" />
+                <ScalarProperty Name="sobrenome" ColumnName="sobrenome" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="RG" ColumnName="RG" />
+                <ScalarProperty Name="CPF" ColumnName="CPF" />
+                <ScalarProperty Name="logradouro" ColumnName="logradouro" />
+                <ScalarProperty Name="bairro" ColumnName="bairro" />
+                <ScalarProperty Name="cidade" ColumnName="cidade" />
+                <ScalarProperty Name="UF" ColumnName="UF" />
+                <ScalarProperty Name="id_departamento" ColumnName="id_departamento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -67,8 +67,11 @@ C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\A
 C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\bin\Antlr3.Runtime.pdb
 C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\obj\Debug\AspNETWAppCadFunc.csproj.AssemblyReference.cache
 C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\obj\Debug\AspNETWAppCadFunc.csproj.CoreCompileInputs.cache
 C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\obj\Debug\AspNETWAppCadFunc.csproj.CopyComplete
 C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\obj\Debug\AspNETWAppCadFunc.dll
 C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\obj\Debug\AspNETWAppCadFunc.pdb
+C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\bin\EntityFramework.dll
+C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\bin\EntityFramework.SqlServer.dll
+C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\bin\EntityFramework.xml
+C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\bin\EntityFramework.SqlServer.xml
