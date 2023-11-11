@@ -75,3 +75,4 @@ C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\A
 C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\bin\EntityFramework.SqlServer.dll
 C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\bin\EntityFramework.xml
 C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\bin\EntityFramework.SqlServer.xml
+C:\Users\jeffe\Desktop\Curso Projeto Vs ASP.NET Web API\ASPNET_WebFormsCadFunc\AspNETWAppCadFunc\AspNETWAppCadFunc\obj\Debug\AspNETWAppCadFunc.csproj.AssemblyReference.cache
