@@ -4,25 +4,25 @@
 	<head>
 		<!-- Basic Page Info -->
 		<meta charset="utf-8" />
-		<title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
+		<title>Cadastro Funcionário - Curso</title>
 		
 		<!-- Site favicon -->
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="vendors/images/apple-touch-icon.png"
+			href="/vendors/images/apple-touch-icon.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="vendors/images/favicon-32x32.png"
+			href="/vendors/images/favicon-32x32.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="16x16"
-			href="vendors/images/favicon-16x16.png"
+			href="/vendors/images/favicon-16x16.png"
 		/>
 
 		<!-- Mobile Specific Metas -->
@@ -37,23 +37,23 @@
 			rel="stylesheet"
 		/>
 		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
+		<link rel="stylesheet" type="text/css" href="/vendors/styles/core.css" />
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="vendors/styles/icon-font.min.css"
+			href="/vendors/styles/icon-font.min.css"
 		/>
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="src/plugins/datatables/css/dataTables.bootstrap4.min.css"
+			href="/src/plugins/datatables/css/dataTables.bootstrap4.min.css"
 		/>
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="src/plugins/datatables/css/responsive.bootstrap4.min.css"
+			href="/src/plugins/datatables/css/responsive.bootstrap4.min.css"
 		/>
-		<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+		<link rel="stylesheet" type="text/css" href="/vendors/styles/style.css" />
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script
@@ -93,7 +93,7 @@
 		<div class="pre-loader">
 			<div class="pre-loader-box">
 				<div class="loader-logo">
-					<img src="vendors/images/deskapp-logo.svg" alt="" />
+					<img src="/vendors/images/deskapp-logo.svg" alt="" />
 				</div>
 				<div class="loader-progress" id="progress_div">
 					<div class="bar" id="bar1"></div>
@@ -197,7 +197,7 @@
 								<ul>
 									<li>
 										<a href="#">
-											<img src="vendors/images/img.jpg" alt="" />
+											<img src="/vendors/images/img.jpg" alt="" />
 											<h3>John Doe</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -207,7 +207,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo1.jpg" alt="" />
+											<img src="/vendors/images/photo1.jpg" alt="" />
 											<h3>Lea R. Frith</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -217,7 +217,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo2.jpg" alt="" />
+											<img src="/vendors/images/photo2.jpg" alt="" />
 											<h3>Erik L. Richards</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -227,7 +227,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo3.jpg" alt="" />
+											<img src="/vendors/images/photo3.jpg" alt="" />
 											<h3>John Doe</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -237,7 +237,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo4.jpg" alt="" />
+											<img src="/vendors/images/photo4.jpg" alt="" />
 											<h3>Renee I. Hansen</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -247,7 +247,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/img.jpg" alt="" />
+											<img src="/vendors/images/img.jpg" alt="" />
 											<h3>Vicki M. Coleman</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -269,7 +269,7 @@
 							data-toggle="dropdown"
 						>
 							<span class="user-icon">
-								<img src="vendors/images/photo1.jpg" alt="" />
+								<img src="/vendors/images/photo1.jpg" alt="" />
 							</span>
 							<span class="user-name">Ross C. Lopez</span>
 						</a>
@@ -289,13 +289,7 @@
 								><i class="dw dw-logout"></i> Log Out</a
 							>
 						</div>
-					</div>
-				</div>
-				<div class="github-link">
-					<a href="https://github.com/dropways/deskapp" target="_blank"
-						><img src="vendors/images/github.svg" alt=""
-					/></a>
-				</div>
+					</div>				
 			</div>
 		</div>
 
@@ -472,9 +466,9 @@
 		<div class="left-side-bar">
 			<div class="brand-logo">
 				<a href="index.html">
-					<img src="vendors/images/deskapp-logo.svg" alt="" class="dark-logo" />
+					<img src="/vendors/images/deskapp-logo.svg" alt="" class="dark-logo" />
 					<img
-						src="vendors/images/deskapp-logo-white.svg"
+						src="/vendors/images/deskapp-logo-white.svg"
 						alt=""
 						class="light-logo"
 					/>
@@ -492,9 +486,9 @@
 								><span class="mtext">Home</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="index.html">Buscar</a></li>
-								<li><a href="index2.html">Cadastrar</a></li>
-								<li><a href="index3.html">Editar</a></li>
+								<li><a href="Paginas/Cadastro.aspx">Buscar</a></li>
+								<li><a href="#">Cadastrar</a></li>
+								<li><a href="#">Editar</a></li>
 							</ul>
 						</li>
 						
@@ -514,16 +508,16 @@
 		</div>
 		
 		<!-- js -->
-		<script src="vendors/scripts/core.js"></script>
-		<script src="vendors/scripts/script.min.js"></script>
-		<script src="vendors/scripts/process.js"></script>
-		<script src="vendors/scripts/layout-settings.js"></script>
-		<script src="src/plugins/apexcharts/apexcharts.min.js"></script>
-		<script src="src/plugins/datatables/js/jquery.dataTables.min.js"></script>
-		<script src="src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
-		<script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
-		<script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
-		<script src="vendors/scripts/dashboard3.js"></script>
+		<script src="/vendors/scripts/core.js"></script>
+		<script src="/vendors/scripts/script.min.js"></script>
+		<script src="/vendors/scripts/process.js"></script>
+		<script src="/vendors/scripts/layout-settings.js"></script>
+		<script src="/src/plugins/apexcharts/apexcharts.min.js"></script>
+		<script src="/src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+		<script src="/src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+		<script src="/src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+		<script src="/src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+		<script src="/vendors/scripts/dashboard3.js"></script>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript
 			><iframe
