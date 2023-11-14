@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNETWAppCadFunc", "AspNETWAppCadFunc\AspNETWAppCadFunc.csproj", "{E82B49C5-7A12-4749-9C73-DDD06C3032C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WbApp_CadFunc_MVC", "WbApp_CadFunc_MVC\WbApp_CadFunc_MVC.csproj", "{35240217-EA74-4A2D-8199-A5B9DEBB2A3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E82B49C5-7A12-4749-9C73-DDD06C3032C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E82B49C5-7A12-4749-9C73-DDD06C3032C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E82B49C5-7A12-4749-9C73-DDD06C3032C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35240217-EA74-4A2D-8199-A5B9DEBB2A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35240217-EA74-4A2D-8199-A5B9DEBB2A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35240217-EA74-4A2D-8199-A5B9DEBB2A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35240217-EA74-4A2D-8199-A5B9DEBB2A3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
