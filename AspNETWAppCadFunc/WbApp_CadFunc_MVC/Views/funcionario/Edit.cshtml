@@ -94,7 +94,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.id_departamento, "id_departamento", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <select name="Departamento_ID" id="Departamento_ID">
+                <select name="Departamento_ID" id="Departamento_ID" class="form-control">
                     @{ foreach (var item in (List<WbApp_CadFunc_MVC.tb_departamento>)ViewBag.Departamentos)
                         {
                             <option value="@item.Id">@item.nome</option>
